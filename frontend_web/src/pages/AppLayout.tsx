@@ -3,7 +3,7 @@ import { AppSidebar } from '@/components/block/nav/AppSidebar';
 
 export function AppLayout() {
   return (
-    <div className="flex h-svh w-full">
+    <div className="flex h-full w-full">
       <AppSidebar />
       <main className="flex-1 overflow-auto bg-background">
         <Outlet />

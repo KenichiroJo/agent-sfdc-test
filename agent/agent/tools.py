@@ -380,9 +380,8 @@ def suggest_deal_field_values(deal_id: str) -> str:
     related_acts = [a for a in ACTIVITIES if a.get("deal_id") == deal_id]
     rep_acts = [a for a in ACTIVITIES if a["rep_id"] == deal["rep_id"]]
 
-    suggestions: dict[str, object] = {"deal_id": deal_id, "suggestions": {}}
-    sugg = suggestions["suggestions"]
-    assert isinstance(sugg, dict)
+    sugg: dict[str, str] = {}
+    suggestions = {"deal_id": deal_id, "suggestions": sugg}
 
     if deal.get("amount") is None and related_acts:
         for a in related_acts:
@@ -588,16 +587,16 @@ PERFORMANCE_TOOLS = COMMON_TOOLS + [
     get_pipeline_analysis,
 ]
 
-ALL_TOOLS = list(
-    {
-        t
-        for tools in [
-            SUMMARY_TOOLS,
-            FEEDBACK_TOOLS,
-            KNOWLEDGE_TOOLS,
-            DATA_COMPLETION_TOOLS,
-            PERFORMANCE_TOOLS,
-        ]
-        for t in tools
-    }
-)
+_seen: set[str] = set()
+ALL_TOOLS = []
+for _toolset in [
+    SUMMARY_TOOLS,
+    FEEDBACK_TOOLS,
+    KNOWLEDGE_TOOLS,
+    DATA_COMPLETION_TOOLS,
+    PERFORMANCE_TOOLS,
+]:
+    for _t in _toolset:
+        if _t.name not in _seen:
+            _seen.add(_t.name)
+            ALL_TOOLS.append(_t)

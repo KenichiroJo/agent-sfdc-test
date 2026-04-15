@@ -118,9 +118,8 @@ export function ReviewPage() {
     navigate(`/review/${rep.id}`);
   };
 
-  const handleAskAI = (activity: Activity) => {
-    const message = encodeURIComponent(`活動ID ${activity.id}（${activity.subject}）の内容を要約して、キーポイントとネクストアクションを提案してください。`);
-    navigate(`/chat?prefill=${message}`);
+  const handleAskAI = (_activity: Activity) => {
+    navigate('/chat');
   };
 
   const filteredReps = reps.filter(r =>
@@ -187,8 +186,7 @@ export function ReviewPage() {
               </div>
               <button
                 onClick={() => {
-                  const msg = encodeURIComponent(`${selectedRep.name}さんの最近の活動についてフィードバックとネクストアクションを提案してください。`);
-                  navigate(`/chat?prefill=${msg}`);
+                  navigate('/chat');
                 }}
                 className="ml-auto text-xs px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium"
               >

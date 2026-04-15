@@ -165,8 +165,7 @@ export function KnowledgePage() {
               </div>
               <button
                 onClick={() => {
-                  const msg = encodeURIComponent('チーム全体のパフォーマンスを分析して改善提案をしてください。');
-                  navigate(`/chat?prefill=${msg}`);
+                  navigate('/chat');
                 }}
                 className="w-full text-xs text-center py-2 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium"
               >
@@ -218,8 +217,7 @@ export function KnowledgePage() {
                 <button
                   key={item.label}
                   onClick={() => {
-                    const msg = encodeURIComponent(item.label);
-                    navigate(`/chat?prefill=${msg}`);
+                    navigate('/chat');
                   }}
                   className="w-full text-left text-xs p-2 rounded hover:bg-muted transition-colors flex items-center gap-2"
                 >

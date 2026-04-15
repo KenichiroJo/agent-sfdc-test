@@ -1,6 +1,6 @@
 'use client';
-import React, { useEffect } from 'react';
-import { useParams, useSearchParams } from 'react-router-dom';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
 import { Skeleton } from '@/components/ui/skeleton';
 import {
