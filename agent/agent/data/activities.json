@@ -1,0 +1,1833 @@
+[
+  {
+    "id": "ACT016",
+    "rep_id": "REP002",
+    "customer_id": "CUST005",
+    "activity_type": "Web会議",
+    "date": "2026-04-14",
+    "duration_minutes": 90,
+    "subject": "年間契約更新交渉",
+    "comment": "埼玉県立総合教育センター木村 正事務局長とWeb会議で在庫状況の確認と発注調整について協議。予算確保が課題とのこと。見積り1000枚ベースで作成予定。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL012",
+    "follow_up_date": "2026-04-28",
+    "tags": [
+      "サンプル",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT012",
+    "rep_id": "REP001",
+    "customer_id": "CUST027",
+    "activity_type": "メール",
+    "date": "2026-04-12",
+    "duration_minutes": 30,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "クリエイティブラボ東京松田 あゆみクリエイティブディレクターからメール返信。追加発注の打ち合わせについて。現行品との比較を希望。次回訪問時にプレゼン資料持参。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL002",
+    "follow_up_date": "2026-04-19",
+    "tags": []
+  },
+  {
+    "id": "ACT038",
+    "rep_id": "REP003",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-04-12",
+    "duration_minutes": 60,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "新規見込み客担当者に定期フォロー電話。価格改定の協議。予算確保が課題とのこと。次回はGW明けに再度連絡。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-04-19",
+    "tags": [
+      "パーカー",
+      "新規",
+      "価格",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT060",
+    "rep_id": "REP005",
+    "customer_id": "CUST026",
+    "activity_type": "電話",
+    "date": "2026-04-12",
+    "duration_minutes": 30,
+    "subject": "西日本物流株式会社へのドライアスレチックTシャツ提案",
+    "comment": "西日本物流株式会社佐野 正義管理部長に定期フォロー電話。年間契約更新交渉。現行品との比較を希望。次回は来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL035",
+    "follow_up_date": "2026-04-16",
+    "tags": [
+      "サンプル",
+      "契約更新",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT015",
+    "rep_id": "REP002",
+    "customer_id": "CUST025",
+    "activity_type": "訪問",
+    "date": "2026-04-11",
+    "duration_minutes": 10,
+    "subject": "新規案件ヒアリング",
+    "comment": "関東学生陸上競技連盟久保田 修事務局次長を訪問。年間契約の更新交渉。昨年度は2020-01 ドライカノコポロシャツを中心に約3000枚の実績。今年度は10%増の見込み。ボリュームディスカウントを提案。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL011",
+    "follow_up_date": "2026-04-23",
+    "tags": [
+      "サンプル",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT043",
+    "rep_id": "REP004",
+    "customer_id": "CUST019",
+    "activity_type": "Web会議",
+    "date": "2026-04-10",
+    "duration_minutes": 50,
+    "subject": "東北自動車販売協会へのドライアスレチックロングスリーブTシャツ提案",
+    "comment": "東北自動車販売協会阿部 和彦総務委員長とオンライン打ち合わせ。年間契約更新交渉の詳細を確認。5942-01 ドライアスレチックロングスリーブTシャツの納期は来月末を希望。次回訪問時にプレゼン資料持参。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-04-18",
+    "tags": [
+      "納期",
+      "契約更新",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT004",
+    "rep_id": "REP001",
+    "customer_id": "CUST004",
+    "activity_type": "メール",
+    "date": "2026-04-09",
+    "duration_minutes": 30,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "セレクトショップ URBAN STYLE西村 彩香バイヤーからメール返信。年間契約更新交渉について。品質に満足いただけた。GW明けに再度連絡。",
+    "sentiment": "positive",
+    "deal_id": "DEAL006",
+    "follow_up_date": "2026-04-19",
+    "tags": [
+      "契約更新"
+    ]
+  },
+  {
+    "id": "ACT068",
+    "rep_id": "REP005",
+    "customer_id": "CUST026",
+    "activity_type": "訪問",
+    "date": "2026-04-07",
+    "duration_minutes": 10,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "西日本物流株式会社佐野 正義管理部長を訪問し、追加発注の打ち合わせについて協議。5044-01 10.0オンス スウェットパンツへの関心が高い。サンプルミックスグレー・ブラックを送付予定。見積りは20000枚規模で依頼あり。GW明けに再度連絡。",
+    "sentiment": "positive",
+    "deal_id": "DEAL035",
+    "follow_up_date": "2026-04-13",
+    "tags": [
+      "サンプル",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT070",
+    "rep_id": "REP006",
+    "customer_id": "CUST009",
+    "activity_type": "訪問",
+    "date": "2026-04-04",
+    "duration_minutes": 45,
+    "subject": "年間契約更新交渉",
+    "comment": "京都織物工業株式会社井上 和夫商品企画部長訪問。来期の発注計画確認。先方からは興味を示されたが価格面で慎重。競合は不明が入っているとの情報。倉庫に在庫状況を確認して回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL036",
+    "follow_up_date": null,
+    "tags": [
+      "価格",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT084",
+    "rep_id": "REP007",
+    "customer_id": "CUST010",
+    "activity_type": "電話",
+    "date": "2026-04-04",
+    "duration_minutes": 75,
+    "subject": "中国地方建設業協同組合への10.0オンス提案",
+    "comment": "中国地方建設業協同組合山田 勝事務局次長より電話。新商品ラインナップ提案について。吸汗速乾素材のニーズが高まっているとのこと。社内で価格承認を取得後回答。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-04-11",
+    "tags": [
+      "価格",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT017",
+    "rep_id": "REP002",
+    "customer_id": "CUST025",
+    "activity_type": "Web会議",
+    "date": "2026-04-03",
+    "duration_minutes": 25,
+    "subject": "関東学生陸上競技連盟 定期フォロー",
+    "comment": "関東学生陸上競技連盟久保田 修事務局次長とオンライン打ち合わせ。5044-01 10.0オンス スウェットパンツの新規提案の詳細を確認。5044-01 10.0オンス スウェットパンツの新色の追加を検討中。社内で価格承認を取得後回答。",
+    "sentiment": "negative",
+    "deal_id": "DEAL011",
+    "follow_up_date": "2026-04-07",
+    "tags": [
+      "新規",
+      "価格",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT030",
+    "rep_id": "REP003",
+    "customer_id": "CUST022",
+    "activity_type": "Web会議",
+    "date": "2026-04-03",
+    "duration_minutes": 90,
+    "subject": "新規案件ヒアリング",
+    "comment": "宇都宮フットサルリーグ石原 拓也事務局長とオンライン打ち合わせ。新商品ラインナップ提案の詳細を確認。1520-01 キャンバストートバッグの現行品との比較テストを実施中。1週間以内にフォローアップ電話。",
+    "sentiment": "negative",
+    "deal_id": "DEAL016",
+    "follow_up_date": null,
+    "tags": []
+  },
+  {
+    "id": "ACT046",
+    "rep_id": "REP004",
+    "customer_id": "CUST021",
+    "activity_type": "訪問",
+    "date": "2026-04-02",
+    "duration_minutes": 90,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "新潟県温泉旅館組合斎藤 正夫事務局長訪問。9660-01 フラットバイザーキャップの新規提案。先方からは興味を示されたが価格面で慎重。競合は地元業者が入っているとの情報。来週サンプル送付予定。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-04-16",
+    "tags": [
+      "サンプル",
+      "新規",
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT019",
+    "rep_id": "REP002",
+    "customer_id": null,
+    "activity_type": "メール",
+    "date": "2026-03-31",
+    "duration_minutes": 50,
+    "subject": "年間契約更新交渉",
+    "comment": "新規見込み客担当者からメール返信。2020-01 ドライカノコポロシャツの新規提案について。競合比較中で返答待ち。来週サンプル送付予定。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-04-03",
+    "tags": [
+      "サンプル",
+      "新規",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT055",
+    "rep_id": "REP005",
+    "customer_id": "CUST026",
+    "activity_type": "訪問",
+    "date": "2026-03-31",
+    "duration_minutes": 45,
+    "subject": "価格改定の相談",
+    "comment": "西日本物流株式会社佐野 正義管理部長を訪問。9660-01 フラットバイザーキャップの新規提案について打ち合わせ。新色の追加を検討中。社内で価格承認を取得後回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL035",
+    "follow_up_date": "2026-04-07",
+    "tags": [
+      "新規",
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT066",
+    "rep_id": "REP005",
+    "customer_id": "CUST007",
+    "activity_type": "メール",
+    "date": "2026-03-31",
+    "duration_minutes": 30,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "関西フードサービス株式会社吉田 裕子総務部課長からメール返信。サンプル評価フィードバックについて。競合比較中で返答待ち。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL030",
+    "follow_up_date": "2026-04-08",
+    "tags": [
+      "サンプル",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT023",
+    "rep_id": "REP002",
+    "customer_id": "CUST018",
+    "activity_type": "訪問",
+    "date": "2026-03-29",
+    "duration_minutes": 20,
+    "subject": "グラフィックプリント北関東 追加発注確認",
+    "comment": "グラフィックプリント北関東関根 太一工場長を訪問。在庫状況の確認と発注調整について打ち合わせ。納期は来月末を希望。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-04-02",
+    "tags": [
+      "サンプル",
+      "納期"
+    ]
+  },
+  {
+    "id": "ACT082",
+    "rep_id": "REP007",
+    "customer_id": "CUST010",
+    "activity_type": "訪問",
+    "date": "2026-03-29",
+    "duration_minutes": 75,
+    "subject": "中国地方建設業協同組合 追加発注確認",
+    "comment": "中国地方建設業協同組合山田 勝事務局次長を訪問。追加発注の打ち合わせ。5900-01 ドライアスレチックTシャツの提案を実施。即決には至らず検討中。社内で価格承認を取得後回答。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-04-05",
+    "tags": [
+      "価格",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT053",
+    "rep_id": "REP004",
+    "customer_id": null,
+    "activity_type": "訪問",
+    "date": "2026-03-27",
+    "duration_minutes": 30,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "新規見込み客担当者訪問。価格改定の協議。先方からは非常に前向きで早期発注を検討中。競合は不明が入っているとの情報。倉庫に在庫状況を確認して回答。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-04-10",
+    "tags": [
+      "価格",
+      "新規",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT054",
+    "rep_id": "REP004",
+    "customer_id": "CUST019",
+    "activity_type": "電話",
+    "date": "2026-03-27",
+    "duration_minutes": 50,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "東北自動車販売協会阿部 和彦総務委員長より問い合わせ電話。5942-01 ドライアスレチックロングスリーブTシャツの吸汗速乾素材のニーズが高まっているとのこと。5000枚の見込み。1週間以内にフォローアップ電話。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-04-02",
+    "tags": [
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT008",
+    "rep_id": "REP001",
+    "customer_id": "CUST023",
+    "activity_type": "訪問",
+    "date": "2026-03-26",
+    "duration_minutes": 75,
+    "subject": "新規案件ヒアリング",
+    "comment": "テクノロジーパーク株式会社橋本 隆人事総務部長を訪問。在庫状況の確認と発注調整について打ち合わせ。サンプル3色を来週送付予定。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-31",
+    "tags": [
+      "サンプル",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT009",
+    "rep_id": "REP001",
+    "customer_id": "CUST023",
+    "activity_type": "電話",
+    "date": "2026-03-25",
+    "duration_minutes": 90,
+    "subject": "テクノロジーパーク株式会社 追加発注確認",
+    "comment": "テクノロジーパーク株式会社橋本 隆人事総務部長に定期フォロー電話。価格改定の協議。品質に満足いただけた。次回は社内で価格承認を取得後回答。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-30",
+    "tags": [
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT037",
+    "rep_id": "REP003",
+    "customer_id": "CUST017",
+    "activity_type": "訪問",
+    "date": "2026-03-25",
+    "duration_minutes": 15,
+    "subject": "新規案件ヒアリング",
+    "comment": "株式会社アスリートワン谷口 翔商品企画リーダーを訪問。年間契約の更新交渉。昨年度は1520-01 キャンバストートバッグを中心に約3000枚の実績。今年度は20%増の見込み。ボリュームディスカウントを提案。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-30",
+    "tags": [
+      "サンプル"
+    ]
+  },
+  {
+    "id": "ACT061",
+    "rep_id": "REP005",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-03-25",
+    "duration_minutes": 90,
+    "subject": "年間契約更新交渉",
+    "comment": "新規見込み客担当者より電話。年間契約更新交渉について。刺繍・プリント加工の仕様を詳細確認。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-04-02",
+    "tags": [
+      "契約更新",
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT075",
+    "rep_id": "REP006",
+    "customer_id": "CUST016",
+    "activity_type": "訪問",
+    "date": "2026-03-22",
+    "duration_minutes": 15,
+    "subject": "新商品ラインナップ提案",
+    "comment": "株式会社名古屋テキスタイル近藤 裕也MD部長を訪問し、追加発注の打ち合わせについて協議。9660-01 フラットバイザーキャップへの関心が高い。サンプルネイビー・ミックスグレーを送付予定。見積りは10000枚規模で依頼あり。次回訪問時にプレゼン資料持参。",
+    "sentiment": "positive",
+    "deal_id": "DEAL041",
+    "follow_up_date": "2026-04-05",
+    "tags": [
+      "サンプル"
+    ]
+  },
+  {
+    "id": "ACT081",
+    "rep_id": "REP007",
+    "customer_id": "CUST010",
+    "activity_type": "Web会議",
+    "date": "2026-03-22",
+    "duration_minutes": 25,
+    "subject": "価格改定の相談",
+    "comment": "中国地方建設業協同組合山田 勝事務局次長とWeb会議。追加発注の打ち合わせについて。現行品との比較テストを実施中。来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-25",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT100",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "訪問",
+    "date": "2026-03-22",
+    "duration_minutes": 40,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長を訪問し、新商品ラインナップ提案について協議。2020-01 ドライカノコポロシャツへの関心が高い。サンプルサンドカーキ・ネイビーを送付予定。見積りは500枚規模で依頼あり。見積り作成後に再訪問。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-30",
+    "tags": [
+      "サンプル",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT041",
+    "rep_id": "REP003",
+    "customer_id": null,
+    "activity_type": "Web会議",
+    "date": "2026-03-21",
+    "duration_minutes": 50,
+    "subject": "新商品ラインナップ提案",
+    "comment": "新規見込み客担当者とWeb会議で追加発注の打ち合わせについて協議。予算確保が課題とのこと。見積り8000枚ベースで作成予定。来週サンプル送付予定。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-03-25",
+    "tags": [
+      "サンプル",
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT051",
+    "rep_id": "REP004",
+    "customer_id": "CUST024",
+    "activity_type": "Web会議",
+    "date": "2026-03-21",
+    "duration_minutes": 90,
+    "subject": "新規案件ヒアリング",
+    "comment": "札幌ラーメン街道協会田村 誠会長とWeb会議で価格改定の協議について協議。担当者変更の可能性あり注意。見積り10000枚ベースで作成予定。来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-24",
+    "tags": [
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT093",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "メール",
+    "date": "2026-03-19",
+    "duration_minutes": 20,
+    "subject": "価格改定の相談",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長からメール返信。年間契約更新交渉について。現行品との比較を希望。見積り作成後に再訪問。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "契約更新",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT107",
+    "rep_id": "REP008",
+    "customer_id": "CUST020",
+    "activity_type": "電話",
+    "date": "2026-03-18",
+    "duration_minutes": 20,
+    "subject": "新規案件ヒアリング",
+    "comment": "株式会社沖縄リゾートマネジメント上原 明購買担当より電話。5214-01 スウェットプルオーバーパーカーの新規提案について。サンプル3色を来週送付予定。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL052",
+    "follow_up_date": "2026-03-22",
+    "tags": [
+      "サンプル",
+      "パーカー",
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT020",
+    "rep_id": "REP002",
+    "customer_id": "CUST018",
+    "activity_type": "訪問",
+    "date": "2026-03-17",
+    "duration_minutes": 75,
+    "subject": "年間契約更新交渉",
+    "comment": "グラフィックプリント北関東関根 太一工場長を訪問し、在庫状況の確認と発注調整について協議。5001-01 ヘビーウェイトTシャツへの関心が高い。サンプルネイビー・蛍光イエローを送付予定。見積りは2000枚規模で依頼あり。来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-03-29",
+    "tags": [
+      "サンプル",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT047",
+    "rep_id": "REP004",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-03-15",
+    "duration_minutes": 30,
+    "subject": "価格改定の相談",
+    "comment": "新規見込み客担当者に架電。新商品ラインナップ提案の確認。予算確保が課題とのこと。倉庫に在庫状況を確認して回答。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT065",
+    "rep_id": "REP005",
+    "customer_id": "CUST026",
+    "activity_type": "メール",
+    "date": "2026-03-15",
+    "duration_minutes": 120,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "西日本物流株式会社佐野 正義管理部長にカタログ・サンプル(5214-01 スウェットプルオーバーパーカー フォレストグリーン・ナチュラル)を送付完了。GW明けに再度連絡。",
+    "sentiment": "positive",
+    "deal_id": "DEAL035",
+    "follow_up_date": "2026-03-28",
+    "tags": [
+      "サンプル",
+      "パーカー",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT067",
+    "rep_id": "REP005",
+    "customer_id": "CUST026",
+    "activity_type": "電話",
+    "date": "2026-03-15",
+    "duration_minutes": 40,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "西日本物流株式会社佐野 正義管理部長に定期フォロー電話。新商品ラインナップ提案。即決には至らず検討中。次回は倉庫に在庫状況を確認して回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL035",
+    "follow_up_date": "2026-03-21",
+    "tags": [
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT073",
+    "rep_id": "REP006",
+    "customer_id": "CUST012",
+    "activity_type": "訪問",
+    "date": "2026-03-13",
+    "duration_minutes": 45,
+    "subject": "デジタルプリントジャパン株式会社 追加発注確認",
+    "comment": "デジタルプリントジャパン株式会社村上 恵美仕入部長を訪問。新商品ラインナップ提案について打ち合わせ。納期は来月末を希望。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL044",
+    "follow_up_date": "2026-03-21",
+    "tags": [
+      "納期"
+    ]
+  },
+  {
+    "id": "ACT011",
+    "rep_id": "REP001",
+    "customer_id": "CUST004",
+    "activity_type": "Web会議",
+    "date": "2026-03-11",
+    "duration_minutes": 45,
+    "subject": "新規案件ヒアリング",
+    "comment": "セレクトショップ URBAN STYLE西村 彩香バイヤーとWeb会議で年間契約更新交渉について協議。予算確保が課題とのこと。見積り8000枚ベースで作成予定。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL006",
+    "follow_up_date": "2026-03-16",
+    "tags": [
+      "サンプル",
+      "契約更新",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT027",
+    "rep_id": "REP002",
+    "customer_id": null,
+    "activity_type": "メール",
+    "date": "2026-03-11",
+    "duration_minutes": 90,
+    "subject": "新規見込み客 追加発注確認",
+    "comment": "新規見込み客担当者にカタログ・サンプル(2020-01 ドライカノコポロシャツ 蛍光イエロー・ミックスグレー)を送付完了。次回訪問時にプレゼン資料持参。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "サンプル",
+      "新規",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT071",
+    "rep_id": "REP006",
+    "customer_id": null,
+    "activity_type": "訪問",
+    "date": "2026-03-11",
+    "duration_minutes": 10,
+    "subject": "新規見込み客 追加発注確認",
+    "comment": "新規見込み客担当者訪問。年間契約更新交渉。先方からは好感触で前向きな反応。競合はジャージーズが入っているとの情報。社内で価格承認を取得後回答。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-03-17",
+    "tags": [
+      "契約更新",
+      "新規",
+      "価格",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT079",
+    "rep_id": "REP006",
+    "customer_id": "CUST016",
+    "activity_type": "Web会議",
+    "date": "2026-03-11",
+    "duration_minutes": 60,
+    "subject": "株式会社名古屋テキスタイル 追加発注確認",
+    "comment": "株式会社名古屋テキスタイル近藤 裕也MD部長とWeb会議。年間契約更新交渉について。現行品との比較テストを実施中。上長承認後に正式提案。",
+    "sentiment": "positive",
+    "deal_id": "DEAL041",
+    "follow_up_date": "2026-03-21",
+    "tags": [
+      "契約更新",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT090",
+    "rep_id": "REP007",
+    "customer_id": "CUST015",
+    "activity_type": "Web会議",
+    "date": "2026-03-10",
+    "duration_minutes": 15,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "四国メディカルサプライ株式会社三浦 健二営業部長とWeb会議で年間契約更新交渉について協議。興味を示されたが価格面で慎重。見積り20000枚ベースで作成予定。社内で価格承認を取得後回答。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "契約更新",
+      "価格",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT036",
+    "rep_id": "REP003",
+    "customer_id": "CUST017",
+    "activity_type": "訪問",
+    "date": "2026-03-09",
+    "duration_minutes": 75,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "株式会社アスリートワン谷口 翔商品企画リーダーを訪問。年間契約の更新交渉。昨年度は2020-01 ドライカノコポロシャツを中心に約5000枚の実績。今年度は10%増の見込み。ボリュームディスカウントを提案。来月の定期訪問で進捗確認。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-03-13",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT064",
+    "rep_id": "REP005",
+    "customer_id": "CUST008",
+    "activity_type": "Web会議",
+    "date": "2026-03-08",
+    "duration_minutes": 45,
+    "subject": "大阪プロモーションセンター 追加発注確認",
+    "comment": "大阪プロモーションセンター岡田 智也企画ディレクターとオンライン打ち合わせ。来期の発注計画確認の詳細を確認。2020-01 ドライカノコポロシャツの吸汗速乾素材のニーズが高まっているとのこと。GW明けに再度連絡。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-03-14",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT087",
+    "rep_id": "REP007",
+    "customer_id": "CUST030",
+    "activity_type": "メール",
+    "date": "2026-03-08",
+    "duration_minutes": 90,
+    "subject": "岡山デニムストリート 定期フォロー",
+    "comment": "岡山デニムストリート武田 一郎店長からメール返信。追加発注の打ち合わせについて。予算確保が課題とのこと。社内で価格承認を取得後回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL047",
+    "follow_up_date": "2026-03-15",
+    "tags": [
+      "パーカー",
+      "価格",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT050",
+    "rep_id": "REP004",
+    "customer_id": "CUST014",
+    "activity_type": "Web会議",
+    "date": "2026-03-06",
+    "duration_minutes": 20,
+    "subject": "新商品ラインナップ提案",
+    "comment": "株式会社横浜クリエイティブ川口 美穂プロダクションマネージャーとオンライン打ち合わせ。新商品ラインナップ提案の詳細を確認。5900-01 ドライアスレチックTシャツのサンプル3色を来週送付予定。上長承認後に正式提案。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL026",
+    "follow_up_date": "2026-03-15",
+    "tags": [
+      "サンプル",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT052",
+    "rep_id": "REP004",
+    "customer_id": "CUST021",
+    "activity_type": "電話",
+    "date": "2026-03-04",
+    "duration_minutes": 75,
+    "subject": "価格改定の相談",
+    "comment": "新潟県温泉旅館組合斎藤 正夫事務局長に架電。サンプル評価フィードバックの確認。担当者変更の可能性あり注意。見積り作成後に再訪問。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-03-18",
+    "tags": [
+      "サンプル"
+    ]
+  },
+  {
+    "id": "ACT077",
+    "rep_id": "REP006",
+    "customer_id": "CUST016",
+    "activity_type": "メール",
+    "date": "2026-03-04",
+    "duration_minutes": 45,
+    "subject": "価格改定の相談",
+    "comment": "株式会社名古屋テキスタイル近藤 裕也MD部長からメール返信。新商品ラインナップ提案について。担当者変更の可能性あり注意。社内で価格承認を取得後回答。",
+    "sentiment": "positive",
+    "deal_id": "DEAL041",
+    "follow_up_date": "2026-03-10",
+    "tags": [
+      "価格",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT069",
+    "rep_id": "REP006",
+    "customer_id": "CUST009",
+    "activity_type": "訪問",
+    "date": "2026-03-03",
+    "duration_minutes": 90,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "京都織物工業株式会社井上 和夫商品企画部長を訪問。年間契約の更新交渉。昨年度は5044-01 10.0オンス スウェットパンツを中心に約3000枚の実績。今年度は横ばいの見込み。単価交渉が必要。来週サンプル送付予定。",
+    "sentiment": "negative",
+    "deal_id": "DEAL036",
+    "follow_up_date": "2026-03-08",
+    "tags": [
+      "サンプル",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT103",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "訪問",
+    "date": "2026-03-03",
+    "duration_minutes": 75,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長を訪問。来期の発注計画確認。5029-01 ヘビーウェイトロングスリーブTシャツの提案を実施。好感触で前向きな反応。見積り作成後に再訪問。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-03-13",
+    "tags": [
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT039",
+    "rep_id": "REP003",
+    "customer_id": null,
+    "activity_type": "Web会議",
+    "date": "2026-03-01",
+    "duration_minutes": 60,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "新規見込み客担当者とWeb会議。新商品ラインナップ提案について。現行品との比較テストを実施中。1週間以内にフォローアップ電話。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "新規"
+    ]
+  },
+  {
+    "id": "ACT104",
+    "rep_id": "REP008",
+    "customer_id": null,
+    "activity_type": "Web会議",
+    "date": "2026-03-01",
+    "duration_minutes": 45,
+    "subject": "新規見込み客 追加発注確認",
+    "comment": "新規見込み客担当者とWeb会議。追加発注の打ち合わせについて。現行品との比較テストを実施中。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "パーカー",
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT057",
+    "rep_id": "REP005",
+    "customer_id": "CUST028",
+    "activity_type": "訪問",
+    "date": "2026-02-26",
+    "duration_minutes": 15,
+    "subject": "神戸市スポーツ振興協会 追加発注確認",
+    "comment": "神戸市スポーツ振興協会遠藤 健次事業課長を訪問。価格改定の協議について打ち合わせ。新色の追加を検討中。来週サンプル送付予定。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-03-04",
+    "tags": [
+      "サンプル",
+      "価格",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT005",
+    "rep_id": "REP001",
+    "customer_id": "CUST027",
+    "activity_type": "訪問",
+    "date": "2026-02-25",
+    "duration_minutes": 50,
+    "subject": "新商品ラインナップ提案",
+    "comment": "クリエイティブラボ東京松田 あゆみクリエイティブディレクターを訪問。年間契約更新交渉。5029-01 ヘビーウェイトロングスリーブTシャツの提案を実施。担当者変更の可能性あり注意。来週サンプル送付予定。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL002",
+    "follow_up_date": "2026-03-10",
+    "tags": [
+      "サンプル",
+      "契約更新",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT088",
+    "rep_id": "REP007",
+    "customer_id": "CUST015",
+    "activity_type": "電話",
+    "date": "2026-02-25",
+    "duration_minutes": 60,
+    "subject": "新規案件ヒアリング",
+    "comment": "四国メディカルサプライ株式会社三浦 健二営業部長より電話。年間契約更新交渉について。新色の追加を検討中。見積り作成後に再訪問。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-03-07",
+    "tags": [
+      "契約更新",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT083",
+    "rep_id": "REP007",
+    "customer_id": "CUST030",
+    "activity_type": "訪問",
+    "date": "2026-02-24",
+    "duration_minutes": 90,
+    "subject": "岡山デニムストリート 追加発注確認",
+    "comment": "岡山デニムストリート武田 一郎店長を訪問。来期の発注計画確認について打ち合わせ。吸汗速乾素材のニーズが高まっているとのこと。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL047",
+    "follow_up_date": null,
+    "tags": [
+      "パーカー",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT014",
+    "rep_id": "REP001",
+    "customer_id": "CUST002",
+    "activity_type": "Web会議",
+    "date": "2026-02-23",
+    "duration_minutes": 20,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "プロモーションワークス株式会社石川 真理営業企画部マネージャーとWeb会議。新商品ラインナップ提案について。新色の追加を検討中。次回訪問時にプレゼン資料持参。",
+    "sentiment": "negative",
+    "deal_id": "DEAL003",
+    "follow_up_date": "2026-03-02",
+    "tags": [
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT031",
+    "rep_id": "REP003",
+    "customer_id": null,
+    "activity_type": "Web会議",
+    "date": "2026-02-23",
+    "duration_minutes": 40,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "新規見込み客担当者とWeb会議で在庫状況の確認と発注調整について協議。担当者変更の可能性あり注意。見積り20000枚ベースで作成予定。次回訪問時にプレゼン資料持参。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-03-03",
+    "tags": [
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT095",
+    "rep_id": "REP008",
+    "customer_id": "CUST029",
+    "activity_type": "Web会議",
+    "date": "2026-02-23",
+    "duration_minutes": 10,
+    "subject": "株式会社福岡ワーカーズ 追加発注確認",
+    "comment": "株式会社福岡ワーカーズ中島 大樹業務管理部長とオンライン打ち合わせ。サンプル評価フィードバックの詳細を確認。5900-01 ドライアスレチックTシャツの吸汗速乾素材のニーズが高まっているとのこと。見積り作成後に再訪問。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL057",
+    "follow_up_date": "2026-03-06",
+    "tags": [
+      "サンプル",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT072",
+    "rep_id": "REP006",
+    "customer_id": "CUST016",
+    "activity_type": "メール",
+    "date": "2026-02-22",
+    "duration_minutes": 15,
+    "subject": "新商品ラインナップ提案",
+    "comment": "株式会社名古屋テキスタイル近藤 裕也MD部長にカタログ・サンプル(5900-01 ドライアスレチックTシャツ レッド・ネイビー)を送付完了。倉庫に在庫状況を確認して回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL041",
+    "follow_up_date": "2026-03-06",
+    "tags": [
+      "サンプル",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT040",
+    "rep_id": "REP003",
+    "customer_id": "CUST022",
+    "activity_type": "訪問",
+    "date": "2026-02-21",
+    "duration_minutes": 45,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "宇都宮フットサルリーグ石原 拓也事務局長を訪問。年間契約更新交渉。1520-01 キャンバストートバッグの提案を実施。競合比較中で返答待ち。次回訪問時にプレゼン資料持参。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL019",
+    "follow_up_date": "2026-02-24",
+    "tags": [
+      "契約更新"
+    ]
+  },
+  {
+    "id": "ACT006",
+    "rep_id": "REP001",
+    "customer_id": "CUST002",
+    "activity_type": "電話",
+    "date": "2026-02-20",
+    "duration_minutes": 40,
+    "subject": "新規案件ヒアリング",
+    "comment": "プロモーションワークス株式会社石川 真理営業企画部マネージャーより電話。価格改定の協議について。吸汗速乾素材のニーズが高まっているとのこと。倉庫に在庫状況を確認して回答。",
+    "sentiment": "negative",
+    "deal_id": "DEAL003",
+    "follow_up_date": "2026-03-02",
+    "tags": [
+      "価格",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT007",
+    "rep_id": "REP001",
+    "customer_id": "CUST002",
+    "activity_type": "訪問",
+    "date": "2026-02-20",
+    "duration_minutes": 20,
+    "subject": "価格改定の相談",
+    "comment": "プロモーションワークス株式会社石川 真理営業企画部マネージャーを訪問し、年間契約更新交渉について協議。5214-01 スウェットプルオーバーパーカーへの関心が高い。サンプルホワイト・スモーキーグリーンを送付予定。見積りは1000枚規模で依頼あり。社内で価格承認を取得後回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL003",
+    "follow_up_date": "2026-03-06",
+    "tags": [
+      "パーカー",
+      "契約更新",
+      "価格",
+      "スウェット",
+      "サンプル"
+    ]
+  },
+  {
+    "id": "ACT025",
+    "rep_id": "REP002",
+    "customer_id": "CUST005",
+    "activity_type": "電話",
+    "date": "2026-02-20",
+    "duration_minutes": 120,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "埼玉県立総合教育センター木村 正事務局長より問い合わせ電話。5900-01 ドライアスレチックTシャツのサンプル3色を来週送付予定。5000枚の見込み。来週サンプル送付予定。",
+    "sentiment": "positive",
+    "deal_id": "DEAL012",
+    "follow_up_date": null,
+    "tags": [
+      "サンプル",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT049",
+    "rep_id": "REP004",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-02-20",
+    "duration_minutes": 45,
+    "subject": "年間契約更新交渉",
+    "comment": "新規見込み客担当者より電話。年間契約更新交渉について。刺繍・プリント加工の仕様を詳細確認。倉庫に在庫状況を確認して回答。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-02-27",
+    "tags": [
+      "契約更新",
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT001",
+    "rep_id": "REP001",
+    "customer_id": "CUST001",
+    "activity_type": "メール",
+    "date": "2026-02-19",
+    "duration_minutes": 30,
+    "subject": "価格改定の相談",
+    "comment": "株式会社東京ユニフォームサービス森田 浩二購買部長宛に5214-01 スウェットプルオーバーパーカーの新規提案のメールを送付。納期は来月末を希望。来月の定期訪問で進捗確認。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-28",
+    "tags": [
+      "納期",
+      "パーカー",
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT058",
+    "rep_id": "REP005",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-02-18",
+    "duration_minutes": 60,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "新規見込み客担当者より問い合わせ電話。5044-01 10.0オンス スウェットパンツの納期は来月末を希望。1000枚の見込み。次回訪問時にプレゼン資料持参。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "納期",
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT074",
+    "rep_id": "REP006",
+    "customer_id": "CUST009",
+    "activity_type": "電話",
+    "date": "2026-02-18",
+    "duration_minutes": 40,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "京都織物工業株式会社井上 和夫商品企画部長に架電。年間契約更新交渉の確認。非常に前向きで早期発注を検討中。来月の定期訪問で進捗確認。",
+    "sentiment": "positive",
+    "deal_id": "DEAL036",
+    "follow_up_date": "2026-02-27",
+    "tags": [
+      "契約更新",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT106",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "訪問",
+    "date": "2026-02-18",
+    "duration_minutes": 75,
+    "subject": "新規案件ヒアリング",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長を訪問。年間契約の更新交渉。昨年度は2020-01 ドライカノコポロシャツを中心に約3000枚の実績。今年度は10%増の見込み。ボリュームディスカウントを提案。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-24",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT003",
+    "rep_id": "REP001",
+    "customer_id": null,
+    "activity_type": "メール",
+    "date": "2026-02-17",
+    "duration_minutes": 120,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "新規見込み客担当者にカタログ・サンプル(2020-01 ドライカノコポロシャツ ホワイト・スモーキーグリーン)を送付完了。上長承認後に正式提案。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-02-21",
+    "tags": [
+      "サンプル",
+      "新規",
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT018",
+    "rep_id": "REP002",
+    "customer_id": "CUST005",
+    "activity_type": "訪問",
+    "date": "2026-02-15",
+    "duration_minutes": 20,
+    "subject": "埼玉県立総合教育センター 定期フォロー",
+    "comment": "埼玉県立総合教育センター木村 正事務局長を訪問。年間契約の更新交渉。昨年度は5942-01 ドライアスレチックロングスリーブTシャツを中心に約3000枚の実績。今年度は20%増の見込み。単価交渉が必要。社内で価格承認を取得後回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL007",
+    "follow_up_date": "2026-02-20",
+    "tags": [
+      "価格",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT042",
+    "rep_id": "REP003",
+    "customer_id": "CUST017",
+    "activity_type": "電話",
+    "date": "2026-02-15",
+    "duration_minutes": 50,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "株式会社アスリートワン谷口 翔商品企画リーダーより電話。5004-01 ポケット付きTシャツの新規提案について。新色の追加を検討中。上長承認後に正式提案。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "新規"
+    ]
+  },
+  {
+    "id": "ACT048",
+    "rep_id": "REP004",
+    "customer_id": null,
+    "activity_type": "Web会議",
+    "date": "2026-02-15",
+    "duration_minutes": 50,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "新規見込み客担当者とWeb会議。新商品ラインナップ提案について。納期は来月末を希望。GW明けに再度連絡。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-18",
+    "tags": [
+      "納期",
+      "新規",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT099",
+    "rep_id": "REP008",
+    "customer_id": "CUST020",
+    "activity_type": "訪問",
+    "date": "2026-02-15",
+    "duration_minutes": 25,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "株式会社沖縄リゾートマネジメント上原 明購買担当を訪問。在庫状況の確認と発注調整。1520-01 キャンバストートバッグの提案を実施。品質に満足いただけた。上長承認後に正式提案。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL052",
+    "follow_up_date": "2026-02-20",
+    "tags": []
+  },
+  {
+    "id": "ACT013",
+    "rep_id": "REP001",
+    "customer_id": "CUST023",
+    "activity_type": "メール",
+    "date": "2026-02-14",
+    "duration_minutes": 40,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "テクノロジーパーク株式会社橋本 隆人事総務部長からメール返信。新商品ラインナップ提案について。競合比較中で返答待ち。次回訪問時にプレゼン資料持参。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT086",
+    "rep_id": "REP007",
+    "customer_id": "CUST010",
+    "activity_type": "電話",
+    "date": "2026-02-14",
+    "duration_minutes": 30,
+    "subject": "新規案件ヒアリング",
+    "comment": "中国地方建設業協同組合山田 勝事務局次長に架電。新商品ラインナップ提案の確認。担当者変更の可能性あり注意。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-25",
+    "tags": [
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT033",
+    "rep_id": "REP003",
+    "customer_id": "CUST022",
+    "activity_type": "Web会議",
+    "date": "2026-02-13",
+    "duration_minutes": 30,
+    "subject": "宇都宮フットサルリーグへの10.0オンス提案",
+    "comment": "宇都宮フットサルリーグ石原 拓也事務局長とWeb会議。来期の発注計画確認について。刺繍・プリント加工の仕様を詳細確認。来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL020",
+    "follow_up_date": "2026-02-21",
+    "tags": [
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT056",
+    "rep_id": "REP005",
+    "customer_id": "CUST007",
+    "activity_type": "訪問",
+    "date": "2026-02-13",
+    "duration_minutes": 90,
+    "subject": "年間契約更新交渉",
+    "comment": "関西フードサービス株式会社吉田 裕子総務部課長を訪問。在庫状況の確認と発注調整について打ち合わせ。サンプル3色を来週送付予定。来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL030",
+    "follow_up_date": "2026-02-18",
+    "tags": [
+      "サンプル"
+    ]
+  },
+  {
+    "id": "ACT059",
+    "rep_id": "REP005",
+    "customer_id": "CUST026",
+    "activity_type": "電話",
+    "date": "2026-02-12",
+    "duration_minutes": 10,
+    "subject": "年間契約更新交渉",
+    "comment": "西日本物流株式会社佐野 正義管理部長に定期フォロー電話。追加発注の打ち合わせ。担当者変更の可能性あり注意。次回は倉庫に在庫状況を確認して回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL035",
+    "follow_up_date": "2026-02-23",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT024",
+    "rep_id": "REP002",
+    "customer_id": "CUST005",
+    "activity_type": "訪問",
+    "date": "2026-02-11",
+    "duration_minutes": 50,
+    "subject": "在庫状況確認と納期調整",
+    "comment": "埼玉県立総合教育センター木村 正事務局長を訪問し、価格改定の協議について協議。1520-01 キャンバストートバッグへの関心が高い。サンプルネイビー・ブラックを送付予定。見積りは2000枚規模で依頼あり。倉庫に在庫状況を確認して回答。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL012",
+    "follow_up_date": "2026-02-20",
+    "tags": [
+      "サンプル",
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT028",
+    "rep_id": "REP002",
+    "customer_id": "CUST006",
+    "activity_type": "Web会議",
+    "date": "2026-02-06",
+    "duration_minutes": 30,
+    "subject": "新規案件ヒアリング",
+    "comment": "プリントスター株式会社松本 大地代表取締役とWeb会議で価格改定の協議について協議。担当者変更の可能性あり注意。見積り15000枚ベースで作成予定。倉庫に在庫状況を確認して回答。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-10",
+    "tags": [
+      "価格",
+      "競合プリントスター",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT098",
+    "rep_id": "REP008",
+    "customer_id": "CUST029",
+    "activity_type": "Web会議",
+    "date": "2026-02-06",
+    "duration_minutes": 75,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "株式会社福岡ワーカーズ中島 大樹業務管理部長とWeb会議で5001-01 ヘビーウェイトTシャツの新規提案について協議。興味を示されたが価格面で慎重。見積り20000枚ベースで作成予定。次回訪問時にプレゼン資料持参。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL053",
+    "follow_up_date": "2026-02-16",
+    "tags": [
+      "価格",
+      "新規",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT085",
+    "rep_id": "REP007",
+    "customer_id": null,
+    "activity_type": "訪問",
+    "date": "2026-02-05",
+    "duration_minutes": 25,
+    "subject": "来期発注計画のすり合わせ",
+    "comment": "新規見込み客担当者を訪問し、価格改定の協議について協議。5004-01 ポケット付きTシャツへの関心が高い。サンプル蛍光オレンジ・ブラックを送付予定。見積りは15000枚規模で依頼あり。見積り作成後に再訪問。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-02-15",
+    "tags": [
+      "サンプル",
+      "新規",
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT002",
+    "rep_id": "REP001",
+    "customer_id": "CUST027",
+    "activity_type": "Web会議",
+    "date": "2026-02-03",
+    "duration_minutes": 75,
+    "subject": "新規案件ヒアリング",
+    "comment": "クリエイティブラボ東京松田 あゆみクリエイティブディレクターとWeb会議で来期の発注計画確認について協議。品質に満足いただけた。見積り15000枚ベースで作成予定。上長承認後に正式提案。",
+    "sentiment": "positive",
+    "deal_id": "DEAL002",
+    "follow_up_date": "2026-02-17",
+    "tags": [
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT032",
+    "rep_id": "REP003",
+    "customer_id": "CUST022",
+    "activity_type": "訪問",
+    "date": "2026-02-03",
+    "duration_minutes": 20,
+    "subject": "価格改定の相談",
+    "comment": "宇都宮フットサルリーグ石原 拓也事務局長訪問。年間契約更新交渉。先方からはサンプル確認後に正式検討とのこと。競合は地元業者が入っているとの情報。上長承認後に正式提案。",
+    "sentiment": "positive",
+    "deal_id": "DEAL016",
+    "follow_up_date": "2026-02-16",
+    "tags": [
+      "サンプル",
+      "パーカー",
+      "契約更新",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT035",
+    "rep_id": "REP003",
+    "customer_id": "CUST017",
+    "activity_type": "Web会議",
+    "date": "2026-02-02",
+    "duration_minutes": 75,
+    "subject": "年間契約更新交渉",
+    "comment": "株式会社アスリートワン谷口 翔商品企画リーダーとWeb会議。5942-01 ドライアスレチックロングスリーブTシャツの新規提案について。現行品との比較テストを実施中。来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT080",
+    "rep_id": "REP006",
+    "customer_id": "CUST012",
+    "activity_type": "訪問",
+    "date": "2026-02-02",
+    "duration_minutes": 120,
+    "subject": "デジタルプリントジャパン株式会社 定期フォロー",
+    "comment": "デジタルプリントジャパン株式会社村上 恵美仕入部長訪問。新商品ラインナップ提案。先方からは品質に満足いただけた。競合は不明が入っているとの情報。上長承認後に正式提案。",
+    "sentiment": "positive",
+    "deal_id": "DEAL044",
+    "follow_up_date": "2026-02-15",
+    "tags": [
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT102",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "訪問",
+    "date": "2026-02-02",
+    "duration_minutes": 20,
+    "subject": "九州スポーツアカデミー 定期フォロー",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長を訪問。サンプル評価フィードバック。5942-01 ドライアスレチックロングスリーブTシャツの提案を実施。非常に前向きで早期発注を検討中。上長承認後に正式提案。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "サンプル",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT101",
+    "rep_id": "REP008",
+    "customer_id": "CUST020",
+    "activity_type": "訪問",
+    "date": "2026-02-01",
+    "duration_minutes": 15,
+    "subject": "株式会社沖縄リゾートマネジメント 追加発注確認",
+    "comment": "株式会社沖縄リゾートマネジメント上原 明購買担当を訪問。追加発注の打ち合わせ。2020-01 ドライカノコポロシャツの提案を実施。予算確保が課題とのこと。来月の定期訪問で進捗確認。",
+    "sentiment": "negative",
+    "deal_id": "DEAL055",
+    "follow_up_date": "2026-02-15",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT022",
+    "rep_id": "REP002",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-01-31",
+    "duration_minutes": 20,
+    "subject": "価格改定の相談",
+    "comment": "新規見込み客担当者より電話。新商品ラインナップ提案について。新色の追加を検討中。倉庫に在庫状況を確認して回答。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-08",
+    "tags": [
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT096",
+    "rep_id": "REP008",
+    "customer_id": "CUST029",
+    "activity_type": "訪問",
+    "date": "2026-01-31",
+    "duration_minutes": 40,
+    "subject": "株式会社福岡ワーカーズ 追加発注確認",
+    "comment": "株式会社福岡ワーカーズ中島 大樹業務管理部長訪問。年間契約更新交渉。先方からは即決には至らず検討中。競合はプリントスター社が入っているとの情報。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": "DEAL057",
+    "follow_up_date": "2026-02-12",
+    "tags": [
+      "契約更新",
+      "競合プリントスター",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT034",
+    "rep_id": "REP003",
+    "customer_id": "CUST003",
+    "activity_type": "メール",
+    "date": "2026-01-30",
+    "duration_minutes": 40,
+    "subject": "サンプル送付・フィードバック確認",
+    "comment": "湘南スポーツクラブ藤井 健太運営部長宛に追加発注の打ち合わせのメールを送付。現行品との比較テストを実施中。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL018",
+    "follow_up_date": "2026-02-07",
+    "tags": []
+  },
+  {
+    "id": "ACT045",
+    "rep_id": "REP004",
+    "customer_id": "CUST021",
+    "activity_type": "電話",
+    "date": "2026-01-30",
+    "duration_minutes": 75,
+    "subject": "年間契約更新交渉",
+    "comment": "新潟県温泉旅館組合斎藤 正夫事務局長に架電。来期の発注計画確認の確認。予算確保が課題とのこと。倉庫に在庫状況を確認して回答。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-04",
+    "tags": [
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT092",
+    "rep_id": "REP007",
+    "customer_id": "CUST010",
+    "activity_type": "メール",
+    "date": "2026-01-30",
+    "duration_minutes": 60,
+    "subject": "新規案件ヒアリング",
+    "comment": "中国地方建設業協同組合山田 勝事務局次長にカタログ・サンプル(5214-01 スウェットプルオーバーパーカー ネイビー・バーガンディ)を送付完了。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": null,
+    "tags": [
+      "サンプル",
+      "パーカー",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT076",
+    "rep_id": "REP006",
+    "customer_id": "CUST016",
+    "activity_type": "Web会議",
+    "date": "2026-01-28",
+    "duration_minutes": 45,
+    "subject": "新商品ラインナップ提案",
+    "comment": "株式会社名古屋テキスタイル近藤 裕也MD部長とオンライン打ち合わせ。5044-01 10.0オンス スウェットパンツの新規提案の詳細を確認。5044-01 10.0オンス スウェットパンツの刺繍・プリント加工の仕様を詳細確認。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": "DEAL041",
+    "follow_up_date": "2026-02-10",
+    "tags": [
+      "新規",
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT091",
+    "rep_id": "REP007",
+    "customer_id": null,
+    "activity_type": "電話",
+    "date": "2026-01-28",
+    "duration_minutes": 25,
+    "subject": "新規見込み客 追加発注確認",
+    "comment": "新規見込み客担当者より問い合わせ電話。5900-01 ドライアスレチックTシャツの現行品との比較テストを実施中。20000枚の見込み。GW明けに再度連絡。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-02-07",
+    "tags": [
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT010",
+    "rep_id": "REP001",
+    "customer_id": "CUST027",
+    "activity_type": "訪問",
+    "date": "2026-01-27",
+    "duration_minutes": 50,
+    "subject": "年間契約更新交渉",
+    "comment": "クリエイティブラボ東京松田 あゆみクリエイティブディレクターを訪問。追加発注の打ち合わせ。5044-01 10.0オンス スウェットパンツの提案を実施。予算確保が課題とのこと。見積り作成後に再訪問。",
+    "sentiment": "positive",
+    "deal_id": "DEAL002",
+    "follow_up_date": "2026-02-02",
+    "tags": [
+      "スウェット"
+    ]
+  },
+  {
+    "id": "ACT021",
+    "rep_id": "REP002",
+    "customer_id": "CUST025",
+    "activity_type": "電話",
+    "date": "2026-01-27",
+    "duration_minutes": 20,
+    "subject": "価格改定の相談",
+    "comment": "関東学生陸上競技連盟久保田 修事務局次長に架電。在庫状況の確認と発注調整の確認。品質に満足いただけた。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": "DEAL008",
+    "follow_up_date": null,
+    "tags": [
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT063",
+    "rep_id": "REP005",
+    "customer_id": "CUST007",
+    "activity_type": "訪問",
+    "date": "2026-01-27",
+    "duration_minutes": 75,
+    "subject": "新規案件ヒアリング",
+    "comment": "関西フードサービス株式会社吉田 裕子総務部課長を訪問し、5900-01 ドライアスレチックTシャツの新規提案について協議。5900-01 ドライアスレチックTシャツへの関心が高い。サンプルナチュラル・ブラックを送付予定。見積りは2000枚規模で依頼あり。1週間以内にフォローアップ電話。",
+    "sentiment": "negative",
+    "deal_id": "DEAL030",
+    "follow_up_date": "2026-02-04",
+    "tags": [
+      "サンプル",
+      "新規",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT089",
+    "rep_id": "REP007",
+    "customer_id": "CUST030",
+    "activity_type": "メール",
+    "date": "2026-01-27",
+    "duration_minutes": 30,
+    "subject": "岡山デニムストリート 定期フォロー",
+    "comment": "岡山デニムストリート武田 一郎店長宛に年間契約更新交渉のメールを送付。サンプル3色を来週送付予定。来週サンプル送付予定。",
+    "sentiment": "positive",
+    "deal_id": "DEAL047",
+    "follow_up_date": "2026-02-09",
+    "tags": [
+      "サンプル",
+      "契約更新",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT026",
+    "rep_id": "REP002",
+    "customer_id": "CUST006",
+    "activity_type": "電話",
+    "date": "2026-01-24",
+    "duration_minutes": 20,
+    "subject": "新規案件ヒアリング",
+    "comment": "プリントスター株式会社松本 大地代表取締役に定期フォロー電話。5942-01 ドライアスレチックロングスリーブTシャツの新規提案。好感触で前向きな反応。次回は来月の定期訪問で進捗確認。",
+    "sentiment": "neutral",
+    "deal_id": null,
+    "follow_up_date": "2026-02-01",
+    "tags": [
+      "新規",
+      "競合プリントスター",
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT029",
+    "rep_id": "REP003",
+    "customer_id": "CUST003",
+    "activity_type": "訪問",
+    "date": "2026-01-24",
+    "duration_minutes": 40,
+    "subject": "湘南スポーツクラブ 定期フォロー",
+    "comment": "湘南スポーツクラブ藤井 健太運営部長を訪問。年間契約の更新交渉。昨年度は5004-01 ポケット付きTシャツを中心に約2000枚の実績。今年度は10%増の見込み。価格据え置きで合意。上長承認後に正式提案。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL018",
+    "follow_up_date": "2026-01-27",
+    "tags": [
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT078",
+    "rep_id": "REP006",
+    "customer_id": "CUST009",
+    "activity_type": "メール",
+    "date": "2026-01-24",
+    "duration_minutes": 40,
+    "subject": "京都織物工業株式会社 追加発注確認",
+    "comment": "京都織物工業株式会社井上 和夫商品企画部長にカタログ・サンプル(5029-01 ヘビーウェイトロングスリーブTシャツ スモーキーグリーン・ブラック)を送付完了。上長承認後に正式提案。",
+    "sentiment": "neutral",
+    "deal_id": "DEAL036",
+    "follow_up_date": "2026-02-05",
+    "tags": [
+      "サンプル",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT044",
+    "rep_id": "REP004",
+    "customer_id": "CUST021",
+    "activity_type": "Web会議",
+    "date": "2026-01-23",
+    "duration_minutes": 40,
+    "subject": "新潟県温泉旅館組合 追加発注確認",
+    "comment": "新潟県温泉旅館組合斎藤 正夫事務局長とオンライン打ち合わせ。在庫状況の確認と発注調整の詳細を確認。5900-01 ドライアスレチックTシャツの新色の追加を検討中。上長承認後に正式提案。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-02-05",
+    "tags": [
+      "ドライ"
+    ]
+  },
+  {
+    "id": "ACT094",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "訪問",
+    "date": "2026-01-22",
+    "duration_minutes": 20,
+    "subject": "年間契約更新交渉",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長を訪問し、来期の発注計画確認について協議。5001-01 ヘビーウェイトTシャツへの関心が高い。サンプルレッド・フォレストグリーンを送付予定。見積りは1000枚規模で依頼あり。1週間以内にフォローアップ電話。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-02-04",
+    "tags": [
+      "サンプル",
+      "ヘビーウェイト"
+    ]
+  },
+  {
+    "id": "ACT105",
+    "rep_id": "REP008",
+    "customer_id": "CUST029",
+    "activity_type": "訪問",
+    "date": "2026-01-17",
+    "duration_minutes": 50,
+    "subject": "年間契約更新交渉",
+    "comment": "株式会社福岡ワーカーズ中島 大樹業務管理部長訪問。価格改定の協議。先方からは現行品との比較を希望。競合は不明が入っているとの情報。倉庫に在庫状況を確認して回答。",
+    "sentiment": "positive",
+    "deal_id": "DEAL056",
+    "follow_up_date": "2026-01-23",
+    "tags": [
+      "価格"
+    ]
+  },
+  {
+    "id": "ACT062",
+    "rep_id": "REP005",
+    "customer_id": "CUST028",
+    "activity_type": "電話",
+    "date": "2026-01-15",
+    "duration_minutes": 15,
+    "subject": "神戸市スポーツ振興協会へのドライカノコポロシャツ提案",
+    "comment": "神戸市スポーツ振興協会遠藤 健次事業課長より電話。来期の発注計画確認について。刺繍・プリント加工の仕様を詳細確認。上長承認後に正式提案。",
+    "sentiment": "negative",
+    "deal_id": null,
+    "follow_up_date": "2026-01-27",
+    "tags": [
+      "ドライ",
+      "ポロシャツ"
+    ]
+  },
+  {
+    "id": "ACT097",
+    "rep_id": "REP008",
+    "customer_id": "CUST011",
+    "activity_type": "訪問",
+    "date": "2026-01-15",
+    "duration_minutes": 120,
+    "subject": "新商品ラインナップ提案",
+    "comment": "九州スポーツアカデミー原田 大介アカデミー長を訪問。1520-01 キャンバストートバッグの新規提案。1520-01 キャンバストートバッグの提案を実施。好感触で前向きな反応。来月の定期訪問で進捗確認。",
+    "sentiment": "positive",
+    "deal_id": null,
+    "follow_up_date": "2026-01-27",
+    "tags": [
+      "新規"
+    ]
+  }
+]

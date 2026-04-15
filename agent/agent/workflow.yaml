@@ -1,0 +1,52 @@
+---
+# Copyright 2025 DataRobot, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+general:
+  front_end:
+    _type: dragent_fastapi
+    # Step adaptor is not necessary for custom agents
+    step_adaptor:
+      mode: 'off'
+    # If you don't want your agent to expose A2A endpoints, remove the following block.
+    a2a:
+      server:
+        name: CAB Sales Support Agent
+        description: キャブ株式会社（United Athle）のフィールドセールス活動支援AIエージェント。営業活動の要約、フィードバック生成、ナレッジ検索、未入力データ補完、パフォーマンス分析を行います。
+      skills:
+        - id: sales_activity_summary
+          name: 営業活動要約
+          description: 営業担当者の活動コメントを要約し、キーポイントを抽出します。
+          tags: []
+          examples:
+            - 田中さんの最近の活動を要約してください
+            - 東京ユニフォームサービスとの活動をまとめて
+# To connect this agent to a remote A2A agent, uncomment the block below and add the
+# function group name to the workflow's tool_names list.
+# function_groups:
+#   remote_agent:
+#     _type: authenticated_a2a_client
+#     url: "https://app.datarobot.com/api/v2/deployments/<deployment-id>/directAccess/a2a/"
+#     auth_provider: datarobot_auth
+llms:
+  datarobot_llm:
+    _type: datarobot-llm-component
+workflow:
+  _type: langgraph_agent
+  llm_name: datarobot_llm
+  description: キャブ株式会社フィールドセールス活動支援AIエージェント
+  # tool_names:
+  #   - remote_agent
+authentication:
+  datarobot_auth:
+    _type: datarobot_api_key

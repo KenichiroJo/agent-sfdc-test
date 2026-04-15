@@ -1,0 +1,11 @@
+﻿id,name,name_kana,email,role,team,manager_id,hire_date,territory,target_quarterly_revenue,avatar_color
+MGR001,佐藤 健一,サトウ ケンイチ,sato.kenichi@cab-corp.co.jp,マネージャー,東日本営業部,,2010-04-01,東日本エリア統括,50000000,#3B82F6
+MGR002,山本 直子,ヤマモト ナオコ,yamamoto.naoko@cab-corp.co.jp,マネージャー,西日本営業部,,2012-04-01,西日本エリア統括,45000000,#8B5CF6
+REP001,田中 太郎,タナカ タロウ,tanaka.taro@cab-corp.co.jp,フィールドセールス,東日本営業部,MGR001,2018-04-01,東京都・神奈川県,12000000,#10B981
+REP002,鈴木 美咲,スズキ ミサキ,suzuki.misaki@cab-corp.co.jp,フィールドセールス,東日本営業部,MGR001,2020-04-01,埼玉県・千葉県,10000000,#F59E0B
+REP003,高橋 翔太,タカハシ ショウタ,takahashi.shota@cab-corp.co.jp,フィールドセールス,東日本営業部,MGR001,2019-10-01,北関東・東北,10000000,#EF4444
+REP004,渡辺 陽介,ワタナベ ヨウスケ,watanabe.yosuke@cab-corp.co.jp,フィールドセールス,東日本営業部,MGR001,2022-04-01,北海道・甲信越,8000000,#06B6D4
+REP005,中村 愛,ナカムラ アイ,nakamura.ai@cab-corp.co.jp,フィールドセールス,西日本営業部,MGR002,2017-04-01,大阪府・兵庫県,12000000,#EC4899
+REP006,伊藤 大輔,イトウ ダイスケ,ito.daisuke@cab-corp.co.jp,フィールドセールス,西日本営業部,MGR002,2021-04-01,京都府・滋賀県・奈良県,9000000,#14B8A6
+REP007,小林 誠,コバヤシ マコト,kobayashi.makoto@cab-corp.co.jp,フィールドセールス,西日本営業部,MGR002,2019-04-01,中国・四国地方,9000000,#F97316
+REP008,加藤 結衣,カトウ ユイ,kato.yui@cab-corp.co.jp,フィールドセールス,西日本営業部,MGR002,2023-04-01,九州・沖縄,8000000,#A855F7
