@@ -25,11 +25,14 @@ async function streamChat(
   try {
     const res = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'text/event-stream',
+      },
       credentials: 'include',
       body: JSON.stringify({
-        thread_id: threadId,
-        run_id: uuid(),
+        threadId: threadId,
+        runId: uuid(),
         messages: messages.map(m => ({
           id: uuid(),
           role: m.role,
