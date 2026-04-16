@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import { useChatDrawer } from '@/components/block/chat/ChatDrawerContext';
+import { InlineChat } from '@/components/block/chat/InlineChat';
 import { demoApi } from '@/api/demo/api-requests';
 import type { SalesRep, Activity } from '@/api/demo/types';
 
@@ -21,9 +21,18 @@ const TYPE_COLORS: Record<string, string> = {
   '展示会': 'bg-pink-100 text-pink-800',
 };
 
-function ActivityCard({ activity, onAskAI }: { activity: Activity; onAskAI: (act: Activity) => void }) {
+function ActivityCard({ activity }: { activity: Activity }) {
   const [expanded, setExpanded] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
+  const [chatMessage, setChatMessage] = useState('');
   const sentiment = SENTIMENT_MAP[activity.sentiment] || SENTIMENT_MAP.neutral;
+
+  const handleAskAI = () => {
+    setChatMessage(
+      `活動ID ${activity.id}（${activity.subject}）の内容を要約して、キーポイントとネクストアクションを提案してください。\n\n活動詳細:\n- 日付: ${activity.date}\n- タイプ: ${activity.activity_type}\n- 顧客: ${activity.customer_name || '不明'}\n- コメント: ${activity.comment}`
+    );
+    setChatOpen(true);
+  };
 
   return (
     <Card className="transition-shadow hover:shadow-sm">
@@ -70,10 +79,11 @@ function ActivityCard({ activity, onAskAI }: { activity: Activity; onAskAI: (act
 
         <div className="flex items-center gap-2 mt-3 pt-2 border-t">
           <button
-            onClick={() => onAskAI(activity)}
-            className="text-xs px-3 py-1.5 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium"
+            onClick={handleAskAI}
+            disabled={chatOpen}
+            className="text-xs px-3 py-1.5 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium disabled:opacity-50"
           >
-            AIに要約を依頼
+            {chatOpen ? 'AI分析中' : 'AIに要約を依頼'}
           </button>
           {activity.follow_up_date && (
             <span className="text-[10px] text-muted-foreground ml-auto">
@@ -81,6 +91,14 @@ function ActivityCard({ activity, onAskAI }: { activity: Activity; onAskAI: (act
             </span>
           )}
         </div>
+
+        {/* Inline Chat */}
+        {chatOpen && (
+          <InlineChat
+            initialMessage={chatMessage}
+            onClose={() => setChatOpen(false)}
+          />
+        )}
       </CardContent>
     </Card>
   );
@@ -93,7 +111,8 @@ export function ReviewPage() {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [selectedRep, setSelectedRep] = useState<SalesRep | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const { openDrawer } = useChatDrawer();
+  const [repChatOpen, setRepChatOpen] = useState(false);
+  const [repChatMessage, setRepChatMessage] = useState('');
 
   useEffect(() => {
     demoApi.getReps().then(data => {
@@ -111,6 +130,7 @@ export function ReviewPage() {
 
   useEffect(() => {
     if (selectedRep) {
+      setRepChatOpen(false);
       demoApi.getRepActivities(selectedRep.id, 30).then(setActivities).catch(console.error);
     }
   }, [selectedRep]);
@@ -120,8 +140,12 @@ export function ReviewPage() {
     navigate(`/review/${rep.id}`);
   };
 
-  const handleAskAI = (activity: Activity) => {
-    openDrawer(`活動ID ${activity.id}（${activity.subject}）の内容を要約して、キーポイントとネクストアクションを提案してください。`);
+  const handleRepFeedback = () => {
+    if (!selectedRep) return;
+    setRepChatMessage(
+      `${selectedRep.name}さん（${selectedRep.team} / ${selectedRep.territory}）の最近の活動についてフィードバックとネクストアクションを提案してください。`
+    );
+    setRepChatOpen(true);
   };
 
   const filteredReps = reps.filter(r =>
@@ -173,7 +197,7 @@ export function ReviewPage() {
       <div className="flex-1 overflow-auto">
         {selectedRep ? (
           <div className="p-6 max-w-3xl">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-4">
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold"
                 style={{ backgroundColor: selectedRep.avatar_color }}
@@ -187,18 +211,27 @@ export function ReviewPage() {
                 </p>
               </div>
               <button
-                onClick={() => {
-                  openDrawer(`${selectedRep.name}さんの最近の活動についてフィードバックとネクストアクションを提案してください。`);
-                }}
-                className="ml-auto text-xs px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium"
+                onClick={handleRepFeedback}
+                disabled={repChatOpen}
+                className="ml-auto text-xs px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium disabled:opacity-50"
               >
-                AIフィードバックを生成
+                {repChatOpen ? 'フィードバック生成中' : 'AIフィードバックを生成'}
               </button>
             </div>
 
+            {/* Rep-level inline chat */}
+            {repChatOpen && (
+              <div className="mb-4">
+                <InlineChat
+                  initialMessage={repChatMessage}
+                  onClose={() => setRepChatOpen(false)}
+                />
+              </div>
+            )}
+
             <div className="space-y-3">
               {activities.map(act => (
-                <ActivityCard key={act.id} activity={act} onAskAI={handleAskAI} />
+                <ActivityCard key={act.id} activity={act} />
               ))}
               {activities.length === 0 && (
                 <div className="text-center text-muted-foreground py-12">活動データがありません</div>

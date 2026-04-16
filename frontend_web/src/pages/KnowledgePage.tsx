@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useChatDrawer } from '@/components/block/chat/ChatDrawerContext';
+import { InlineChat } from '@/components/block/chat/InlineChat';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -23,7 +23,8 @@ function formatYen(amount: number): string {
 }
 
 export function KnowledgePage() {
-  const { openDrawer } = useChatDrawer();
+  const [analysisChatOpen, setAnalysisChatOpen] = useState(false);
+  const [assistChatOpen, setAssistChatOpen] = useState<string | null>(null);
   const [articles, setArticles] = useState<KnowledgeArticle[]>([]);
   const [metrics, setMetrics] = useState<PerformanceMetric[]>([]);
   const [selectedCategory, setSelectedCategory] = useState('全て');
@@ -163,12 +164,19 @@ export function KnowledgePage() {
                   <div className="text-lg font-bold">{metrics.reduce((s, m) => s + m.activities_count, 0)}件</div>
                 </div>
               </div>
-              <button
-                onClick={() => openDrawer('チーム全体のパフォーマンスを分析して改善提案をしてください。')}
-                className="w-full text-xs text-center py-2 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium"
-              >
-                AIに詳しい分析を依頼 →
-              </button>
+              {!analysisChatOpen ? (
+                <button
+                  onClick={() => setAnalysisChatOpen(true)}
+                  className="w-full text-xs text-center py-2 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium"
+                >
+                  AIに詳しい分析を依頼 →
+                </button>
+              ) : (
+                <InlineChat
+                  initialMessage="チーム全体のパフォーマンスを分析して改善提案をしてください。"
+                  onClose={() => setAnalysisChatOpen(false)}
+                />
+              )}
             </CardContent>
           </Card>
 
@@ -214,13 +222,19 @@ export function KnowledgePage() {
               ].map(item => (
                 <button
                   key={item.label}
-                  onClick={() => openDrawer(item.label)}
-                  className="w-full text-left text-xs p-2 rounded hover:bg-muted transition-colors flex items-center gap-2"
+                  onClick={() => setAssistChatOpen(assistChatOpen === item.label ? null : item.label)}
+                  className={`w-full text-left text-xs p-2 rounded transition-colors flex items-center gap-2 ${assistChatOpen === item.label ? 'bg-blue-50 text-blue-700' : 'hover:bg-muted'}`}
                 >
                   <span>{item.icon}</span>
                   <span>{item.label}</span>
                 </button>
               ))}
+              {assistChatOpen && (
+                <InlineChat
+                  initialMessage={assistChatOpen}
+                  onClose={() => setAssistChatOpen(null)}
+                />
+              )}
             </CardContent>
           </Card>
         </div>
