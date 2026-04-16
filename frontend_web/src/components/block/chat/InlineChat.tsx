@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { v4 as uuid } from 'uuid';
-import { HttpAgent } from '@ag-ui/client';
-import { EventType } from '@ag-ui/core';
-import { AG_UI_ENDPOINT } from '@/constants/endpoints';
-import { Markdown } from '@/components/ui/markdown';
+import { getApiUrl } from '@/lib/url-utils';
 
 interface ChatMessage {
   id: string;
@@ -11,69 +8,95 @@ interface ChatMessage {
   content: string;
 }
 
-function useInlineAgent(threadId: string) {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [isRunning, setIsRunning] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const currentAssistantRef = useRef<string>('');
+/**
+ * Sends a message to the chat API via SSE and streams the response.
+ * Uses native fetch - no ag-ui dependency.
+ */
+async function streamChat(
+  threadId: string,
+  messages: Array<{ role: string; content: string }>,
+  onDelta: (text: string) => void,
+  onDone: () => void,
+  onError: (err: string) => void,
+) {
+  const apiBase = getApiUrl();
+  const url = `${apiBase}/v1/chat`;
 
-  const sendMessage = useCallback(
-    (text: string) => {
-      setError(null);
-      setIsRunning(true);
-      currentAssistantRef.current = '';
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({
+        thread_id: threadId,
+        run_id: uuid(),
+        messages: messages.map(m => ({
+          id: uuid(),
+          role: m.role,
+          content: m.content,
+        })),
+      }),
+    });
 
-      const userMsg: ChatMessage = { id: uuid(), role: 'user', content: text };
-      setMessages(prev => [...prev, userMsg]);
+    if (!res.ok) {
+      onError(`API error: ${res.status}`);
+      return;
+    }
 
-      const assistantId = uuid();
-      setMessages(prev => [...prev, { id: assistantId, role: 'assistant', content: '' }]);
+    const reader = res.body?.getReader();
+    if (!reader) {
+      onError('No response body');
+      return;
+    }
 
-      const agent = new HttpAgent({
-        url: AG_UI_ENDPOINT,
-        threadId,
-        agentId: threadId,
-      });
+    const decoder = new TextDecoder();
+    let buffer = '';
 
-      const runId = uuid();
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
 
-      agent.on(EventType.TEXT_MESSAGE_CONTENT, (event) => {
-        currentAssistantRef.current += event.delta ?? '';
-        setMessages(prev =>
-          prev.map(m => (m.id === assistantId ? { ...m, content: currentAssistantRef.current } : m))
-        );
-      });
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() || '';
 
-      agent.on(EventType.RUN_ERROR, (event) => {
-        setError(event.message || 'エラーが発生しました');
-        setIsRunning(false);
-      });
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        const data = line.slice(6).trim();
+        if (data === '[DONE]') continue;
 
-      agent.on(EventType.RUN_FINISHED, () => {
-        setIsRunning(false);
-      });
+        try {
+          const event = JSON.parse(data);
+          // Handle different event formats from the DataRobot AG-UI backend
+          if (event.type === 'TEXT_MESSAGE_CONTENT' && event.delta) {
+            onDelta(event.delta);
+          } else if (event.type === 'RUN_FINISHED') {
+            // Stream complete
+          } else if (event.type === 'RUN_ERROR') {
+            onError(event.message || 'Agent error');
+          }
+          // Also handle nested events format
+          if (event.events) {
+            for (const e of event.events) {
+              if (e.content?.parts) {
+                for (const part of e.content.parts) {
+                  if (part.type === 'text' && part.text) {
+                    onDelta(part.text);
+                  }
+                }
+              }
+            }
+          }
+        } catch {
+          // Not valid JSON, skip
+        }
+      }
+    }
 
-      agent.runAgent({
-        runId,
-        threadId,
-        messages: [
-          ...messages.map(m => ({
-            id: m.id,
-            role: m.role as 'user' | 'assistant',
-            content: m.content,
-          })),
-          { id: userMsg.id, role: 'user' as const, content: text },
-        ],
-      }).catch((err: unknown) => {
-        const msg = err instanceof Error ? err.message : 'Connection error';
-        setError(msg);
-        setIsRunning(false);
-      });
-    },
-    [threadId, messages]
-  );
-
-  return { messages, isRunning, error, sendMessage };
+    onDone();
+  } catch (err) {
+    onError(err instanceof Error ? err.message : 'Connection error');
+  }
 }
 
 interface InlineChatProps {
@@ -83,18 +106,66 @@ interface InlineChatProps {
 
 export function InlineChat({ initialMessage, onClose }: InlineChatProps) {
   const [threadId] = useState(() => uuid());
-  const { messages, isRunning, error, sendMessage } = useInlineAgent(threadId);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [isRunning, setIsRunning] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [input, setInput] = useState('');
   const sentRef = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const assistantTextRef = useRef('');
 
+  const sendMessage = useCallback(
+    (text: string) => {
+      setError(null);
+      setIsRunning(true);
+      assistantTextRef.current = '';
+
+      const userMsg: ChatMessage = { id: uuid(), role: 'user', content: text };
+      const assistantId = uuid();
+
+      setMessages(prev => [
+        ...prev,
+        userMsg,
+        { id: assistantId, role: 'assistant', content: '' },
+      ]);
+
+      const history = [
+        ...messages.map(m => ({ role: m.role, content: m.content })),
+        { role: 'user', content: text },
+      ];
+
+      streamChat(
+        threadId,
+        history,
+        (delta) => {
+          assistantTextRef.current += delta;
+          setMessages(prev =>
+            prev.map(m =>
+              m.id === assistantId
+                ? { ...m, content: assistantTextRef.current }
+                : m
+            )
+          );
+        },
+        () => setIsRunning(false),
+        (err) => {
+          setError(err);
+          setIsRunning(false);
+        },
+      );
+    },
+    [threadId, messages],
+  );
+
+  // Auto-send initial message
   useEffect(() => {
     if (!sentRef.current && initialMessage) {
       sentRef.current = true;
       sendMessage(initialMessage);
     }
-  }, [initialMessage]);
+  }, [initialMessage, sendMessage]);
 
+  // Auto-scroll
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
@@ -106,7 +177,7 @@ export function InlineChat({ initialMessage, onClose }: InlineChatProps) {
     }
   };
 
-  // Hide the first user message (it's the auto-sent context message)
+  // Don't show the first user message (auto-sent context)
   const visibleMessages = messages.slice(1);
 
   return (
@@ -137,15 +208,13 @@ export function InlineChat({ initialMessage, onClose }: InlineChatProps) {
           <div key={msg.id}>
             {msg.role === 'user' ? (
               <div className="flex justify-end">
-                <div className="bg-blue-600 text-white rounded-lg px-3 py-2 max-w-[85%]">
+                <div className="bg-blue-600 text-white rounded-lg px-3 py-2 max-w-[85%] whitespace-pre-wrap">
                   {msg.content}
                 </div>
               </div>
             ) : (
-              <div className="bg-white rounded-lg px-3 py-2 border border-blue-100 prose prose-xs max-w-none [&_p]:my-1 [&_ul]:my-1 [&_li]:my-0.5 [&_h1]:text-sm [&_h2]:text-xs [&_h3]:text-xs [&_h4]:text-xs">
-                {msg.content ? (
-                  <Markdown>{msg.content}</Markdown>
-                ) : (
+              <div className="bg-white rounded-lg px-3 py-2 border border-blue-100 whitespace-pre-wrap">
+                {msg.content || (
                   <span className="text-muted-foreground animate-pulse">考え中...</span>
                 )}
               </div>
