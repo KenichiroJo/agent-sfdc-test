@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useChatDrawer } from '@/components/block/chat/ChatDrawerContext';
 import { demoApi } from '@/api/demo/api-requests';
 import type { DashboardSummary, SalesRep, Activity, PerformanceMetric } from '@/api/demo/types';
 
@@ -28,6 +29,7 @@ function KpiCard({ title, value, subtitle, color }: { title: string; value: stri
 export function DashboardPage() {
   const navigate = useNavigate();
   const [summary, setSummary] = useState<DashboardSummary | null>(null);
+  const { openDrawer } = useChatDrawer();
   const [reps, setReps] = useState<SalesRep[]>([]);
   const [recentActivities, setRecentActivities] = useState<Record<string, Activity[]>>({});
   const [metrics, setMetrics] = useState<PerformanceMetric[]>([]);
@@ -171,7 +173,7 @@ export function DashboardPage() {
                 </div>
               </div>
               <button
-                onClick={() => navigate('/chat')}
+                onClick={() => openDrawer('チーム全体のパフォーマンスを分析して改善提案をしてください。')}
                 className="w-full text-xs text-center py-2 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium"
               >
                 AIに詳しく分析を依頼する →

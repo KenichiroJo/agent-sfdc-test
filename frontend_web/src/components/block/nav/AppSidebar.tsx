@@ -12,18 +12,19 @@ import {
   SidebarFooter,
 } from '@/components/ui/sidebar';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { useChatDrawer } from '@/components/block/chat/ChatDrawerContext';
 import { PATHS } from '@/constants/path';
 
 const NAV_ITEMS = [
   { label: 'ダッシュボード', path: PATHS.DASHBOARD, icon: '📊' },
   { label: '活動レビュー＆FB', path: PATHS.REVIEW, icon: '📋' },
   { label: 'ナレッジ＆分析', path: PATHS.KNOWLEDGE, icon: '📚' },
-  { label: 'AIチャット', path: PATHS.CHAT_EMPTY, icon: '💬' },
 ];
 
 export function AppSidebar() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { openDrawer } = useChatDrawer();
 
   return (
     <Sidebar>
@@ -44,7 +45,7 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {NAV_ITEMS.map(item => {
-                const isActive = location.pathname.startsWith(item.path.replace('/:chatId', '').replace(':repId', ''));
+                const isActive = location.pathname.startsWith(item.path.replace(':repId', ''));
                 return (
                   <SidebarMenuItem key={item.path}>
                     <SidebarMenuButton
@@ -58,6 +59,12 @@ export function AppSidebar() {
                   </SidebarMenuItem>
                 );
               })}
+              <SidebarMenuItem>
+                <SidebarMenuButton onClick={() => openDrawer()} className="gap-3">
+                  <span className="text-base">💬</span>
+                  <span>AIチャット</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>

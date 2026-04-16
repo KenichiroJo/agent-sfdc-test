@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
+import { useChatDrawer } from '@/components/block/chat/ChatDrawerContext';
 import { demoApi } from '@/api/demo/api-requests';
 import type { SalesRep, Activity } from '@/api/demo/types';
 
@@ -92,6 +93,7 @@ export function ReviewPage() {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [selectedRep, setSelectedRep] = useState<SalesRep | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const { openDrawer } = useChatDrawer();
 
   useEffect(() => {
     demoApi.getReps().then(data => {
@@ -118,8 +120,8 @@ export function ReviewPage() {
     navigate(`/review/${rep.id}`);
   };
 
-  const handleAskAI = (_activity: Activity) => {
-    navigate('/chat');
+  const handleAskAI = (activity: Activity) => {
+    openDrawer(`活動ID ${activity.id}（${activity.subject}）の内容を要約して、キーポイントとネクストアクションを提案してください。`);
   };
 
   const filteredReps = reps.filter(r =>
@@ -186,7 +188,7 @@ export function ReviewPage() {
               </div>
               <button
                 onClick={() => {
-                  navigate('/chat');
+                  openDrawer(`${selectedRep.name}さんの最近の活動についてフィードバックとネクストアクションを提案してください。`);
                 }}
                 className="ml-auto text-xs px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium"
               >

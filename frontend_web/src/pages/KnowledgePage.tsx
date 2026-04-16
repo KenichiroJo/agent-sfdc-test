@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useChatDrawer } from '@/components/block/chat/ChatDrawerContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -23,7 +23,7 @@ function formatYen(amount: number): string {
 }
 
 export function KnowledgePage() {
-  const navigate = useNavigate();
+  const { openDrawer } = useChatDrawer();
   const [articles, setArticles] = useState<KnowledgeArticle[]>([]);
   const [metrics, setMetrics] = useState<PerformanceMetric[]>([]);
   const [selectedCategory, setSelectedCategory] = useState('全て');
@@ -164,9 +164,7 @@ export function KnowledgePage() {
                 </div>
               </div>
               <button
-                onClick={() => {
-                  navigate('/chat');
-                }}
+                onClick={() => openDrawer('チーム全体のパフォーマンスを分析して改善提案をしてください。')}
                 className="w-full text-xs text-center py-2 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors font-medium"
               >
                 AIに詳しい分析を依頼 →
@@ -216,9 +214,7 @@ export function KnowledgePage() {
               ].map(item => (
                 <button
                   key={item.label}
-                  onClick={() => {
-                    navigate('/chat');
-                  }}
+                  onClick={() => openDrawer(item.label)}
                   className="w-full text-left text-xs p-2 rounded hover:bg-muted transition-colors flex items-center gap-2"
                 >
                   <span>{item.icon}</span>
