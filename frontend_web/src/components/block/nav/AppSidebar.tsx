@@ -30,10 +30,10 @@ export function AppSidebar() {
       <SidebarHeader className="border-b border-sidebar-border px-4 py-4">
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white text-sm font-bold">
-            UA
+            SW
           </div>
           <div>
-            <div className="text-sm font-semibold">United Athle</div>
+            <div className="text-sm font-semibold">StyleWorks</div>
             <div className="text-xs text-muted-foreground">営業活動支援AI</div>
           </div>
         </div>

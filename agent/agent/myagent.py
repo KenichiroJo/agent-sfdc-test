@@ -92,7 +92,7 @@ def _extract_route(text: str) -> str:
 
 
 class MyAgent(LangGraphAgent):
-    """キャブ株式会社（United Athle）フィールドセールス活動支援AIエージェント。
+    """株式会社スタイルワークス（StyleWorks）フィールドセールス活動支援AIエージェント。
 
     5つの機能を持つ営業支援エージェント:
     1. 営業活動自動要約
@@ -178,7 +178,7 @@ class MyAgent(LangGraphAgent):
             [
                 (
                     "system",
-                    "あなたはキャブ株式会社（United Athleブランド）の"
+                    "あなたは株式会社スタイルワークス（StyleWorksブランド）の"
                     "フィールドセールス活動支援AIエージェントです。"
                     "営業担当者やマネージャーからの質問に対して、適切なツールを使って回答してください。"
                     "日本語で丁寧に回答してください。"
@@ -259,7 +259,7 @@ class MyAgent(LangGraphAgent):
             self.llm(),
             tools=SUMMARY_TOOLS + self.mcp_tools + self._workflow_tools,
             system_prompt=make_system_prompt(
-                "あなたはキャブ株式会社（United Athle）の営業活動自動要約エージェントです。\n"
+                "あなたは株式会社スタイルワークス（StyleWorks）の営業活動自動要約エージェントです。\n"
                 "営業担当者のSFDC活動コメントを分析し、効率的な情報把握を支援します。\n"
                 "\n"
                 "## あなたの役割\n"
@@ -294,7 +294,7 @@ class MyAgent(LangGraphAgent):
             self.llm(),
             tools=FEEDBACK_TOOLS + self.mcp_tools + self._workflow_tools,
             system_prompt=make_system_prompt(
-                "あなたはキャブ株式会社（United Athle）のマネージャー向けフィードバック・ネクストアクション提案エージェントです。\n"
+                "あなたは株式会社スタイルワークス（StyleWorks）のマネージャー向けフィードバック・ネクストアクション提案エージェントです。\n"
                 "営業マネージャーが部下に質の高いフィードバックとネクストアクションを提供できるよう支援します。\n"
                 "\n"
                 "## あなたの役割\n"
@@ -328,12 +328,12 @@ class MyAgent(LangGraphAgent):
             self.llm(),
             tools=KNOWLEDGE_TOOLS + self.mcp_tools + self._workflow_tools,
             system_prompt=make_system_prompt(
-                "あなたはキャブ株式会社（United Athle）のナレッジ自動蓄積・検索エージェントです。\n"
+                "あなたは株式会社スタイルワークス（StyleWorks）のナレッジ自動蓄積・検索エージェントです。\n"
                 "営業ナレッジの検索・提供を通じて、営業担当者の活動を支援します。\n"
                 "\n"
                 "## あなたの役割\n"
                 "1. ユーザーの質問に関連するナレッジ記事を検索・提示\n"
-                "2. 商品知識（United Athle製品の特徴、提案ポイント）を提供\n"
+                "2. 商品知識（StyleWorks製品の特徴、提案ポイント）を提供\n"
                 "3. 営業ノウハウ（価格交渉、新規開拓、業種別アプローチ）を共有\n"
                 "4. 成功事例・失敗事例から学びを抽出\n"
                 "5. 競合情報を整理して提供\n"
@@ -361,7 +361,7 @@ class MyAgent(LangGraphAgent):
             self.llm(),
             tools=DATA_COMPLETION_TOOLS + self.mcp_tools + self._workflow_tools,
             system_prompt=make_system_prompt(
-                "あなたはキャブ株式会社（United Athle）の未入力商談データ補完エージェントです。\n"
+                "あなたは株式会社スタイルワークス（StyleWorks）の未入力商談データ補完エージェントです。\n"
                 "SFDCに未入力のフィールドがある商談を検出し、補完を支援します。\n"
                 "\n"
                 "## あなたの役割\n"
@@ -395,7 +395,7 @@ class MyAgent(LangGraphAgent):
             self.llm(),
             tools=PERFORMANCE_TOOLS + self.mcp_tools + self._workflow_tools,
             system_prompt=make_system_prompt(
-                "あなたはキャブ株式会社（United Athle）の営業パフォーマンス分析・改善提案エージェントです。\n"
+                "あなたは株式会社スタイルワークス（StyleWorks）の営業パフォーマンス分析・改善提案エージェントです。\n"
                 "営業チーム全体のパフォーマンスを分析し、データに基づいた改善提案を行います。\n"
                 "\n"
                 "## あなたの役割\n"
