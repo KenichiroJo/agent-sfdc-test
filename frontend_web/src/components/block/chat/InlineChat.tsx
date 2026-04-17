@@ -33,11 +33,15 @@ async function streamChat(
       body: JSON.stringify({
         threadId: threadId,
         runId: uuid(),
+        state: {},
         messages: messages.map(m => ({
           id: uuid(),
           role: m.role,
           content: m.content,
         })),
+        tools: [],
+        context: [],
+        forwardedProps: {},
       }),
     });
 
